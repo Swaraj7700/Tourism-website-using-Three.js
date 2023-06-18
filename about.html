@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/about_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="background-container">
+                <div class="bg-1"></div>
+            </div>
+            <div class="about-container">
+                <a href="index.html" class="back-button"></a>
+
+                <div class="text-container">
+
+                    <h1>About us</h1>
+                    <p>
+                        Welcome to Mera Bharat, a website that offers a unique virtual tour of some of India's most
+                        famous and historic monuments. Our website is designed to take you on a journey through the rich
+                        history and culture of India, without ever leaving your home.
+
+                        At Mera Bharat, we are passionate about preserving India's heritage and sharing it with the
+                        world. Our team of experts has carefully curated 3D models of some of India's most iconic
+                        monuments, including the Taj Mahal, Red Fort, Qutub Minar, and many others. Our 3D models are
+                        created using cutting-edge technology, including Three.js, to ensure that every detail is
+                        captured accurately.
+
+                        Our website is designed to be user-friendly, allowing visitors to easily navigate through the
+                        virtual tour and explore each monument from different angles. We also provide detailed
+                        information about each monument, including its history, architecture, and cultural significance.
+
+                        We believe that our website is a valuable resource for tourists, students, and anyone who is
+                        interested in learning more about India's rich cultural heritage. We are committed to providing
+                        the most accurate and up-to-date information about each monument, and we are constantly updating
+                        our website with new content.
+
+                        <br> Thank you for visiting Mera Bharat, and we hope that our website will inspire you to
+                        explore the beauty and history of India's monuments.
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/merabharat.in/" class="instagram"></a>
+            </div>
+        </div>
+
+    </header>
+    <footer class="mt-auto">
+        &copy; 2023 CopyRight. All rights reserved.
+    </footer>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("Images/fort.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    @media (max-width: 991.98px) {
+        body:not(.show-navbar-collapse) {
+            overflow: hidden;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+    }
+
+    .bg-1 {
+        flex: 1;
+    }
+
+    .about-container {
+        width: 85%;
+        min-height: 80vh;
+        position: absolute;
+        background-color: white;
+        box-shadow: 24px 24px 30px #6d8dad;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+        border-radius: 5px;
+    }
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        background-image: url("Images/backbutton.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .back-button:hover {
+        opacity: 0.8;
+    }
+
+    .back-button:active {
+        opacity: 0.6;
+    }
+
+    .back-button:focus {
+        outline: none;
+    }
+
+    .back-button::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        z-index: -1;
+    }
+
+    .back-button::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid white;
+    }
+
+    .back-button:focus::before,
+    .back-button:hover::before {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .back-button:active::before {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .instagram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-image: url("/Images/images.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 20px auto;
+    }
+</style>
+
+</html>
