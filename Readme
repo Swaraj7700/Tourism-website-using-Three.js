@@ -34,3 +34,17 @@ Embark on a virtual tour like no other with our Tourism Website using Three.js. 
 Visit our website to begin your adventure today. Don't forget to share your thoughts and feedback—your virtual journey awaits! ✨
 
 #TourismWebsite #VirtualTour #Threejs #WebDevelopment #VirtualExperience
+
+********SETUP********
+
+
+1)Download node.js from https://nodejs.org/en/download/current
+The first step of creating the project is to create a bundle using NPM.
+Commands for creating the bundle using NPM in VITE are: -
+-npm create vite@latest
+Then enter the name of the project module.
+-npm install
+-npm install three
+This command is to install Three.js library into the module. This will create a bundle with Three.js library installed.
+-npm run dev
+Then you can clone this repository 
